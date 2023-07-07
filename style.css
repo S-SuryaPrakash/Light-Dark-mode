@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Kaushan+Script&family=Oswald&display=swap');
 
 :root{
     --primary-color:rgb(255,92,92);
@@ -28,6 +28,7 @@ html{
 body{
     margin: 0;
     color: var(--on-background);
+    font-family: Comfortaa,sans-serif;
     background-color: var(--background);
     background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2349bdc9' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -41,6 +42,7 @@ section{
 }
 
 h1{
+    font-family: kaushan Script, sans-serif;
     font-size: 100px;
     margin-bottom: 0;
 }
@@ -48,12 +50,13 @@ h2{
     color: var(--on-background-alt);
     font-size: 32px;
     font-weight: normal;
+    text-align: center;
 }
 
 nav{
     z-index: 10;
     position: fixed;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: oswald, sans-serif;
     font-size: 24px;
     letter-spacing: 3px;
     padding: 25px;
@@ -110,4 +113,53 @@ button:hover:not(.outline){
 .secondary,.secondary:hover,.ouline.secondary:hover{
     background: var(--secondary-color);
     color: var(--on-primary);
+}
+
+.image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    border-radius: 5px;
+    border: solid ;
+    width: 250px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5b );
+}
+img{
+    width: 100%;
+    height: 40%;
+    
+}
+.about-container{
+    display: flex;
+}
+
+.text-box{
+    width: 40%;
+    text-align: justify;
+    background: rgb(0 0 0 / 50%);
+    color: var(--on-primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+p{
+    margin: 0;
+    line-height: 25px;
+}
+
+svg{
+    font-size: 100px;
+    margin-right: 50px ;
+    cursor: pointer;
+    color: white;
+}
+
+svg:hover{
+fill: var(--on-background);}
+
+.theme-switch-wrapper{
+    display: flex;
 }
